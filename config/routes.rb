@@ -11,7 +11,8 @@ AgApp::Application.routes.draw do |map|
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  resources :users
+  resources :messages
 
   # Sample resource route with options:
   #   resources :products do
@@ -48,7 +49,7 @@ AgApp::Application.routes.draw do |map|
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "application#index"
 
   # See how all your routes lay out with "rake routes"
 

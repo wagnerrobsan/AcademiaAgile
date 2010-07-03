@@ -1,0 +1,14 @@
+<h1>Enviar nova mensagem</h1>
+
+<%= form_for @message do |f|%>
+    <div>
+      <%= f.label :title, 'Titulo' %>
+      <%= f.text_field :title %>
+    </div>
+    <div>
+      <%= f.label :text, 'Mensagem' %>
+      <%= f.text_field :text %>
+    </div>
+
+    <%= f.submit 'Enviar mensagem' %>
+<%end%>

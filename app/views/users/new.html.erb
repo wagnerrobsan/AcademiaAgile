@@ -1,0 +1,22 @@
+<h1>Cadastro de Usuários</h1>
+
+<%= form_for @user do |f|%>
+    <div>
+      <%= f.label :name, 'Nome' %>
+      <%= f.text_field :name %>
+    </div>
+    <div>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </div>
+    <div>
+      <%= f.label :turma %>
+      <%= f.text_field :turma %>
+    </div>
+    <div>
+      <%= f.label :about, 'Sobre mim' %>
+      <%= f.text_field :about %>
+    </div>
+
+    <%= f.submit 'Cadastrar' %>
+<%end%>

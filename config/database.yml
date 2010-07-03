@@ -1,0 +1,26 @@
+development:
+  adapter: mysql
+  database: ag_app_dev
+  encoding: utf8
+  username: root
+  password:
+  host: 127.0.0.1
+
+test: &test
+  adapter: mysql
+  database: ag_app_test
+  encoding: utf8
+  username: root
+  password:
+  host: 127.0.0.1
+
+production:
+  adapter: mysql
+  database: ag_app_production
+  encoding: utf8
+  username: root
+  password:
+  host: 127.0.0.1
+
+cucumber:
+  <<: *test
